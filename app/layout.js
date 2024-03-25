@@ -1,8 +1,9 @@
-import { Inter } from "next/font/google";
-import Script from "next/script";
+import { Noto_Sans_KR } from "next/font/google";
+import Header from "@/components/header/Header";
+import Footer from "@/components/footer/Footer";
 import "./globals.css";
 
-const inter = Inter({ subsets: ["latin"] });
+const noto = Noto_Sans_KR({ preload: false });
 
 export const metadata = {
   title: "Create Next App",
@@ -12,8 +13,11 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <Script strategy="afterInteractive" src={`https://openapi.map.naver.com/openapi/v3/maps.js?ncpClientId=${process.env.NEXT_PUBLIC_MAP_CLIENT_ID}&submodules=geocoder`}></Script>
-      <body className={inter.className}>{children}</body>
+      <body className={noto.className}>
+        <Header></Header>
+        <main className={classes.main}>{children}</main>
+        <Footer></Footer>
+      </body>
     </html>
   );
 }
