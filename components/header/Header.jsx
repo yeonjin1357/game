@@ -1,6 +1,8 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Nav from "./nav";
+import HeaderButton from "./HeaderButton";
 import classes from "./Header.module.css";
 
 import logo from "@/public/logo_white.svg";
@@ -10,9 +12,12 @@ const Header = () => {
     <header className={classes.header}>
       <div className={classes.header_wrap}>
         <div className={classes.logo}>
-          <Image src={logo} alt="검은사막" />
+          <Link href="/">
+            <Image src={logo} alt="검은사막" />
+          </Link>
         </div>
         <Nav></Nav>
+        <HeaderButton></HeaderButton>
       </div>
     </header>
   );

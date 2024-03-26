@@ -10,7 +10,9 @@
 
 .header_wrap {
   display: flex;
-  align-items: center;
+  align-items: stretch;
+  width: 100%;
+  height: 100%;
 }
 
 .logo {
@@ -18,6 +20,6 @@
   align-items: center;
   justify-content: center;
   width: 200px;
-  height: 80px;
+  height: 100%;
   padding: 0 40px;
 }

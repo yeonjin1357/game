@@ -86,3 +86,7 @@ li {
   font-weight: 200;
   src: url("/fonts/web_pearl_original.ttf") format("truetype");
 }
+
+main {
+  margin-top: 80px;
+}
