@@ -1,0 +1,22 @@
+.nav {
+  flex: 1;
+  padding-left: 80px;
+}
+
+.menu {
+  display: flex;
+  gap: 40px;
+}
+
+.menu_item {
+  position: relative;
+}
+
+.menu_link {
+  color: #fff;
+}
+
+.depth_menu {
+  position: absolute;
+  display: none;
+}

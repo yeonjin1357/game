@@ -14,6 +14,7 @@ body {
 body {
   color: #313131;
   background: #fff;
+  font-family: pearl, sans-serif;
 }
 
 body::-webkit-scrollbar {
@@ -77,4 +78,11 @@ li {
   html {
     color-scheme: dark;
   }
+}
+
+/* 폰트 설정 */
+@font-face {
+  font-family: "pearl";
+  font-weight: 200;
+  src: url("/fonts/web_pearl_original.ttf") format("truetype");
 }

@@ -13,9 +13,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="ko">
-      <body className={noto.className}>
+      <body>
         <Header></Header>
-        <main className={classes.main}>{children}</main>
+        <main>{children}</main>
         <Footer></Footer>
       </body>
     </html>
